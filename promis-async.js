@@ -7,3 +7,8 @@ const getData = async (url) => {
 getData('https://jsonplaceholder.typicode.com/todos/1')
     .then((data) => console.log(data))
     .catch((error) => console.error(error))
+
+// const url = 'https://jsonplaceholder.typicode.com/todos/1'
+
+// const data = await getData(url)
+// console.log(data)
