@@ -11,13 +11,12 @@ const timerPromise = () =>
 
 const asyncFn = async () => {
     console.log('Timer starts')
+    const startTime = performance.now()
     await timerPromise()
-    console.log('Timer ended')
+    const endTime = performance.now()
+    console.log('Timer ended', endTime - startTime)
 }
 
 asyncFn()
 
 console.log('End of script')
-
-
-
